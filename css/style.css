@@ -1,0 +1,99 @@
+.white-block {
+  background-color: #f9f8fb;
+  width: 100%;
+}
+.blue-block {
+  background-color: #00b0b0;
+  width: 100%;
+}
+.mainer {
+  max-width: 1500px;
+  height: 100vh;
+  margin: 0 auto;
+  background-image: url(../img/bg.jpg);
+}
+.home,
+.about-us {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 150px;
+  align-items: center;
+  box-sizing: border-box;
+}
+.header__logo {
+  font-size: 50px;
+  font-family: "Pacifico", cursive;
+}
+.header__navigation_item {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 6px 0 0 0;
+  line-height: 32px;
+}
+.header__navigation_item:not(:last-child) {
+  margin-right: 30px;
+}
+.header__navigation_item:hover {
+  border-top: 3px solid #ff6033;
+}
+.cell {
+  top: 200px;
+  max-width: 400px;
+  position: relative;
+}
+.cell__caption {
+  font-size: 60px;
+  font-weight: bold;
+}
+.cell__discription {
+  font-size: 17px;
+  line-height: 27px;
+  margin: 14px 0 27px 0;
+}
+.cell__button {
+  font-size: 20px;
+  color: #ffeeeb;
+  width: 200px;
+  height: 55px;
+  text-align: center;
+  line-height: 55px;
+  box-sizing: border-box;
+  background-color: #ff6033;
+  border: none;
+  box-shadow: 0 5px 5px rgb(0, 0, 0, 0.5);
+}
+.cell__button:hover {
+  background-color: #d1360c;
+  cursor: pointer;
+}
+.about-us {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about-us__image_cup {
+  width: 100%;
+}
+.about-us__text_caption {
+  font-size: 90px;
+  color: #fff;
+  font-weight: bold;
+}
+.about-us__text_discription {
+  max-width: 500px;
+}
+.about-us__text_discription_p {
+  font-size: 17px;
+  color: #fff;
+  line-height: 27px;
+  margin: 15px 0 0 0;
+}

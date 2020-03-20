@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Pacifico|Raleway:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cahee</title>
+  </head>
+  <body>
+    <div class="white-block">
+      <div class="mainer">
+        <div class="home">
+          <div class="header">
+            <div class="header__logo">Cahee</div>
+            <div class="header__navigation">
+              <a href="#" class="header__navigation_item">home</a>
+              <a href="#about-us" class="header__navigation_item">about</a>
+              <a href="#" class="header__navigation_item">services</a>
+              <a href="#" class="header__navigation_item">gallery</a>
+              <a href="#" class="header__navigation_item">blog</a>
+              <a href="#" class="header__navigation_item">contact</a>
+            </div>
+          </div>
+          <div class="cell">
+            <div class="cell__caption">Fresh Life</div>
+            <div class="cell__discription">
+              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+            </div>
+            <button type="button" class="cell__button">GET FREE NOW</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="blue-block">
+      <div class="about-us" id="about-us">
+        <div class="about-us__image">
+          <img src="img/cup.png" alt="Cup" class="about-us__image_cup" />
+        </div>
+        <div class="about-us__text">
+          <div class="about-us__text_caption">About Us</div>
+          <div class="about-us__text_discription">
+            <p class="about-us__text_discription_p">
+              Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum.
+            </p>
+            <p class="about-us__text_discription_p">
+              Nim id est laborum. Sed ut perspiciatis unde omnis iste natus
+              error sit voluptatem accusantium doloremque laudantium, totam rem
+              aperiam, eaque ipsa quae ab illo inventore.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const anchors = document.querySelectorAll('a[href*="#"]');
+      for (let anchor of anchors) {
+        anchor.addEventListener("click", function(e) {
+          e.preventDefault();
+          const idBlock = anchor.getAttribute("href");
+          document.querySelector("" + idBlock).scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
