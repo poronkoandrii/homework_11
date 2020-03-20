@@ -5,6 +5,7 @@
 .blue-block {
   background-color: #00b0b0;
   width: 100%;
+  min-height: 1000px;
 }
 .mainer {
   max-width: 1500px;
@@ -29,6 +30,7 @@
 .header__logo {
   font-size: 50px;
   font-family: "Pacifico", cursive;
+  margin-right: 25px;
 }
 .header__navigation_item {
   font-size: 16px;
